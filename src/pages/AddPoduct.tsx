@@ -19,7 +19,6 @@ function AddProduct() {
     const {id} = useParams()
     const { handleSubmit, control, formState: { errors },register} = useForm<IFormCategory>({
         defaultValues: {
-            title:""
         },
     });
     const [image,setImage] = useState<File>();

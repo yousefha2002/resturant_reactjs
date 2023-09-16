@@ -18,7 +18,7 @@ export default function Products() {
     const navigate = useNavigate();
 
     function handleUpdate(id: number) {
-        navigate(`/update-category/${id}`);
+        navigate(`/update-product/${id}`);
     }
 
     const renderButtons = (id:number) => (

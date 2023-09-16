@@ -19,7 +19,7 @@ export default function Categories() {
     const navigate = useNavigate()
     function handleUpdate(id:number)
     {
-        navigate(`/update-category/${id}`)
+        navigate(`/update-table/${id}`)
     }
 
     const renderButtons = (id:number) => (

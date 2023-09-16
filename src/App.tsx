@@ -7,6 +7,7 @@ import AddCategory from "./pages/AddCategory";
 import Products from "./pages/Products";
 import Tables from "./pages/Tables";
 import AddPoduct from "./pages/AddPoduct";
+import AddTable from "./pages/AddTable";
 
 const queryClient = new QueryClient()
 
@@ -20,7 +21,10 @@ function App() {
             <Route element={<AddCategory/>} path="update-category/:id"/>
             <Route element={<Products/>} path="products"/>
             <Route element={<Tables/>} path="tables"/>
+            <Route element={<AddTable/>} path="add-table"/>
+            <Route element={<AddTable/>} path="update-table/:id"/>
             <Route element={<AddPoduct/>} path="add-product"/>
+            <Route element={<AddPoduct/>} path="update-product/:id"/>
           </Routes>
         </Layout>
     </QueryClientProvider>
