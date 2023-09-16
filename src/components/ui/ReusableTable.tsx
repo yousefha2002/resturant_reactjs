@@ -4,10 +4,10 @@ import { TableColumn } from '../../types/TableColumn';
 interface TableProps<T> {
     data: T[];
     columns: TableColumn<T>[];
-    onUpdate: (id: number) => void;
+    renderButtons: (id: number) => React.ReactNode;
 }
 
-export default function ReusableTable<T extends { id: number }>({ columns, data, onUpdate }: TableProps<T>) {
+export default function ReusableTable<T extends { id: number }>({ columns, data,renderButtons }: TableProps<T>) {
     return (
         <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -37,15 +37,7 @@ export default function ReusableTable<T extends { id: number }>({ columns, data,
                                 </td>
                             ))}
                             <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                <button
-                                    className="ml-2 text-blue-500 hover:text-blue-700"
-                                    onClick={() => onUpdate(item.id)}
-                                >
-                                    Update
-                                </button>
-                                <button className="ml-2 text-red-500 hover:text-red-700">
-                                    Delete
-                                </button>
+                                {renderButtons(item.id)}
                             </td>
                         </tr>
                     ))}

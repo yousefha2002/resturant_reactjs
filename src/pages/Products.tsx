@@ -21,6 +21,13 @@ export default function Products() {
         navigate(`/update-category/${id}`);
     }
 
+    const renderButtons = (id:number) => (
+        <>
+            <button key="update-button" className="ml-2 text-blue-500 hover:text-blue-700" onClick={() => handleUpdate(id)}>Update</button>
+            <button key="delete-button" className="ml-2 text-red-500 hover:text-red-700">Delete</button>
+        </>
+    );
+
     return (
         <div>
             <div className='flex justify-between items-center mb-4'>
@@ -30,7 +37,7 @@ export default function Products() {
             <ReusableTable
                 data={data}
                 columns={columns}
-                onUpdate={handleUpdate}
+                renderButtons={renderButtons}
             />
         </div>
     );
