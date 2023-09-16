@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import { Route, Routes } from "react-router-dom";
 import Categories from "./pages/Categories";
 import AddCategory from "./pages/AddCategory";
+import Products from "./pages/Products";
 
 const queryClient = new QueryClient()
 
@@ -15,6 +16,7 @@ function App() {
             <Route element={<Categories/>} path="categories"/>
             <Route element={<AddCategory/>} path="add-category"/>
             <Route element={<AddCategory/>} path="update-category/:id"/>
+            <Route element={<Products/>} path="products"/>
           </Routes>
         </Layout>
     </QueryClientProvider>

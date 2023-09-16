@@ -1,6 +1,6 @@
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
-import {MdWorkspacesFilled} from 'react-icons/md';
+import {MdWorkspacesFilled,MdProductionQuantityLimits} from 'react-icons/md';
 import {BiSolidCategory} from 'react-icons/bi';
 import TopicBox from './TopicBox';
 
@@ -25,8 +25,8 @@ type props = {
         },
         {
             title:"Products",
-            link:"",
-            icon:MdWorkspacesFilled
+            link:"products",
+            icon:MdProductionQuantityLimits
         },
         {
             title:"Tables",
