@@ -6,6 +6,7 @@ import Categories from "./pages/Categories";
 import AddCategory from "./pages/AddCategory";
 import Products from "./pages/Products";
 import Tables from "./pages/Tables";
+import AddPoduct from "./pages/AddPoduct";
 
 const queryClient = new QueryClient()
 
@@ -19,6 +20,7 @@ function App() {
             <Route element={<AddCategory/>} path="update-category/:id"/>
             <Route element={<Products/>} path="products"/>
             <Route element={<Tables/>} path="tables"/>
+            <Route element={<AddPoduct/>} path="add-product"/>
           </Routes>
         </Layout>
     </QueryClientProvider>
