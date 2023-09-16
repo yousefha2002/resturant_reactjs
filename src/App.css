@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#f4f5f6;
+}
+
+*{
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.Container{
+    @apply container px-2 xl:px-6 mx-auto
+}
+
+.Label {
+    @apply block mb-2 
+}
