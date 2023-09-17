@@ -10,6 +10,7 @@ import AddPoduct from "./pages/AddPoduct";
 import AddTable from "./pages/AddTable";
 import Staff from "./pages/Staff";
 import AddRole from "./pages/AddRole";
+import AddEmployee from "./pages/AddEmployee";
 
 const queryClient = new QueryClient()
 
@@ -30,6 +31,8 @@ function App() {
             <Route element={<Staff/>} path="staff"/>
             <Route element={<AddRole/>} path="add-role"/>
             <Route element={<AddRole/>} path="update-role/:id"/>
+            <Route element={<AddEmployee/>} path="add-employee"/>
+            <Route element={<AddEmployee/>} path="update-employee/:id"/>
           </Routes>
         </Layout>
     </QueryClientProvider>
