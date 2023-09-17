@@ -1,7 +1,7 @@
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import {MdWorkspacesFilled,MdProductionQuantityLimits} from 'react-icons/md';
-import {BiSolidCategory} from 'react-icons/bi';
+import {BiSolidCategory,BiSolidUser} from 'react-icons/bi';
 import {GiTable} from 'react-icons/gi';
 import TopicBox from './TopicBox';
 
@@ -33,6 +33,11 @@ type props = {
             title:"Tables",
             link:"tables",
             icon:GiTable
+        },
+        {
+            title:"Staff",
+            link:"staff",
+            icon:BiSolidUser
         },
     ]
 
