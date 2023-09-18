@@ -1,4 +1,4 @@
 export type Table = {
-    id:number,
-    title:string
-}
+  id: number;
+  title: string;
+};
